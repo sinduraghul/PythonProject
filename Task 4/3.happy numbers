@@ -10,9 +10,12 @@ def happy(a):   # define fun to check which numbers in list 'a' are happy num
                 tempsum += int(digit) ** 2 #- square each digit and add it to tempsum
             n = tempsum  # replaces old number with new num in loop
         if n == 1:
-            b.append(a[i])
+            b.append(a[i]) #append adds current numbers at end of list
     return b #happy numbers stored
-print(happy(a)) #happy numbers printed
+happy_numbers = happy(a)
+print(f"Happy numbers: {happy_numbers}")  # print happy numbers
+
+ #happy numbers printed
 
 # while n!=1 and n !=4:
 #  the loop will continue to execute as long as the
